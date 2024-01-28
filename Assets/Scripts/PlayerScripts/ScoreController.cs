@@ -7,7 +7,12 @@ public class ScoreController : MonoBehaviour
 {
     public UnityEvent OnScoreModified;
 
-    public int Score {  get; private set; }
+    public int Score { get; private set; }
+
+    private void Start()
+    {
+        Score = 0;
+    }
 
     public void ModifyScore(int amount)
     {
