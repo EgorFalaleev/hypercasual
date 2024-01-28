@@ -20,6 +20,7 @@ public class ScorePickup : ScoreObject, IPickup
 
     public void ApplyEffect()
     {
+        GetComponent<EffectSoundController>().PlayEffectSound();
         ModifyScore();
     }
 }

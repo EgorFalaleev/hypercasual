@@ -17,6 +17,7 @@ public class AsteroidHealthController : MonoBehaviour
 
         if (collision.CompareTag(Tags.PLAYER))
         {
+            GetComponent<EffectSoundController>().PlayEffectSound();
             Destroy(gameObject);
         }
     }
