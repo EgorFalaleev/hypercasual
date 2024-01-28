@@ -14,5 +14,10 @@ public class AsteroidHealthController : MonoBehaviour
             OnDeath.Invoke();
             Destroy(gameObject);
         }
+
+        if (collision.CompareTag(Tags.PLAYER))
+        {
+            Destroy(gameObject);
+        }
     }
 }
