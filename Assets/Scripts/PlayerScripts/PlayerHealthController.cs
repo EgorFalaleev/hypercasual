@@ -29,4 +29,10 @@ public class PlayerHealthController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public int GetHealth()
+    { 
+        return _health; 
+    }
+
 }
