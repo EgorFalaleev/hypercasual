@@ -68,4 +68,4 @@ MonoBehaviour:
   _maxNumberOfObjectsToSpawn: 3
   _pickupPrefabs:
   - {fileID: 3863273510589262429, guid: 7f5e6d672521a234988fcc29e946ae68, type: 3}
-  _pickupSpawnProbability: 0.5
+  _pickupSpawnProbability: 0.2

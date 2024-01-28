@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickupSpawner : Spawner
 {
     [SerializeField] private List<GameObject> _pickupPrefabs;
+    [Range(0f, 1f)]
     [SerializeField] private float _pickupSpawnProbability = 0.3f;
 
     protected override void Spawn(int amountToSpawn)
