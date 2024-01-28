@@ -1129,7 +1129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 504719035491129297, guid: b90ec0f9c9e11fd4cacda24a735bc705, type: 3}
       propertyPath: m_Name
-      value: AsteroidSpawner
+      value: Spawner
       objectReference: {fileID: 0}
     - target: {fileID: 504719035491129303, guid: b90ec0f9c9e11fd4cacda24a735bc705, type: 3}
       propertyPath: m_RootOrder

@@ -39,7 +39,7 @@ public abstract class Spawner : MonoBehaviour
         }
     }
 
-    private void Spawn(int amountToSpawn)
+    protected virtual void Spawn(int amountToSpawn)
     {
         for (int i = 0; i < amountToSpawn; i++)
         {
