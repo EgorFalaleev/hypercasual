@@ -25,6 +25,8 @@ public class HealthPickup : MonoBehaviour, IPickup
 
     public void ApplyEffect()
     {
+        GetComponent<EffectSoundController>().PlayEffectSound();
+
         if (_playerHealthController != null)
         {
             _playerHealthController.AddHealth(_healthAmount);

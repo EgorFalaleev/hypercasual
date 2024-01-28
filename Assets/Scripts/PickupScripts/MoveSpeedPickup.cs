@@ -25,6 +25,8 @@ public class MoveSpeedPickup : MonoBehaviour, IPickup
 
     public void ApplyEffect()
     {
+        GetComponent<EffectSoundController>().PlayEffectSound();
+
         if (_playerMovementController != null)
         {
             _playerMovementController.ModifyMoveSpeed(_moveSpeedIncreaseAmount);
