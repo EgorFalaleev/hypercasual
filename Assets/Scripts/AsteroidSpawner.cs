@@ -5,12 +5,15 @@ using UnityEngine;
 public class AsteroidSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject _asteroidPrefab;
-    [SerializeField] private float _spawnCooldownInSeconds = 1f;
-    [Range(1, 3)]
-    [SerializeField] private int _numberOfAsteroidsToSpawn = 1;
+    [SerializeField] private float _minSpawnCooldownInSeconds = 0.5f;
+    [SerializeField] private float _maxSpawnCooldownInSeconds = 1.5f;
+    [SerializeField] private int _minNumberOfAsteroidsToSpawn = 1;
+    [SerializeField] private int _maxNumberOfAsteroidsToSpawn = 3;
 
     private float _timer = 0f;
     private Vector2 _screenBounds;
+    private int _numberOfAsteroidsToSpawn = 0;
+    private float _timeTillNextAsteroidInSeconds = 1f;
 
     void Start()
     {
@@ -21,16 +24,23 @@ public class AsteroidSpawner : MonoBehaviour
     {
         _timer += Time.deltaTime;
 
-        if (_timer > _spawnCooldownInSeconds)
+        if (_timer > _timeTillNextAsteroidInSeconds)
         {
+            // randomize number of spawned asteroids
+            _numberOfAsteroidsToSpawn = Random.Range(_minNumberOfAsteroidsToSpawn, _maxNumberOfAsteroidsToSpawn + 1);
+            
             SpawnAsteroids(_numberOfAsteroidsToSpawn);
+
+            // randomize spawn cooldown
+            _timeTillNextAsteroidInSeconds = Random.Range(_minSpawnCooldownInSeconds, _maxSpawnCooldownInSeconds);
+
             _timer = 0f;
         }
     }
 
     private void SpawnAsteroids(int amountToSpawn)
     {
-        for (int i = 0; i < _numberOfAsteroidsToSpawn; i++)
+        for (int i = 0; i < amountToSpawn; i++)
         {
             Instantiate(_asteroidPrefab, GenerateRandomPosition(), Quaternion.identity);
         }
