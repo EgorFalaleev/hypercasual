@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac54dc07a3061b45ace50e20e608f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 300
+  _moveSpeed: 250
 --- !u!114 &4246912528721396682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,10 +227,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 320cd5031c69933469ebf2659758acc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnDamageTaken:
+  OnHealthChanged:
     m_PersistentCalls:
       m_Calls: []
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
-  _health: 3
+  _maxHealth: 3

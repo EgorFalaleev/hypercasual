@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 504719035491129303}
   - component: {fileID: 504719035491129296}
+  - component: {fileID: 598255920}
   m_Layer: 0
-  m_Name: AsteroidSpawner
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,6 +45,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4adb36235f04464f8e3302eb28c9267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _minSpawnCooldownInSeconds: 0.5
+  _maxSpawnCooldownInSeconds: 1.5
+  _minNumberOfObjectsToSpawn: 1
+  _maxNumberOfObjectsToSpawn: 3
   _asteroidPrefab: {fileID: 2962026546172036141, guid: 74fe07eb9c9228b458b735b75e9cab2e, type: 3}
-  _spawnCooldownInSeconds: 1
-  _numberOfAsteroidsToSpawn: 1
+--- !u!114 &598255920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504719035491129297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b8c61e8bfd42b41b2e9517c1aa3539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minSpawnCooldownInSeconds: 0.5
+  _maxSpawnCooldownInSeconds: 1.5
+  _minNumberOfObjectsToSpawn: 1
+  _maxNumberOfObjectsToSpawn: 3
+  _pickupPrefabs:
+  - {fileID: 3863273510589262429, guid: 7f5e6d672521a234988fcc29e946ae68, type: 3}
+  - {fileID: 3863273510589262429, guid: 91e4dcf19986b534ab06ce3e9dc64a55, type: 3}
+  - {fileID: 3863273510589262429, guid: 4245c0de712c9ef408d610e02b792fbb, type: 3}
+  _pickupSpawnProbability: 0.2

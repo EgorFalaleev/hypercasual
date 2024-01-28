@@ -35,4 +35,9 @@ public class PlayerMovementController : MonoBehaviour
     {
         _rb.velocity = direction * speed;
     }
+
+    public void ModifyMoveSpeed(float amount)
+    {
+        _moveSpeed += amount;
+    }
 }
