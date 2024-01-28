@@ -1189,11 +1189,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnHealthChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1796159093}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1796159093}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
@@ -1205,7 +1217,19 @@ PrefabInstance:
       value: SetHeartImages
       objectReference: {fileID: 0}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetHeartImages
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerHealthUIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerHealthUIController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
@@ -1213,7 +1237,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4246912528360776863}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 4246912528360776863}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: PlayerHealthController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: PlayerHealthController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4246912528721396673, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
