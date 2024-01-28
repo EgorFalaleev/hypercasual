@@ -28,7 +28,7 @@ public class PickupSpawner : Spawner
         }
         else
         {
-            _objectToSpawn = _pickupPrefabs[Random.Range(0, _pickupPrefabs.Count + 1)];
+            _objectToSpawn = _pickupPrefabs[Random.Range(0, _pickupPrefabs.Count)];
             return true;
         }
     }
