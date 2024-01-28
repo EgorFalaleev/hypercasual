@@ -69,4 +69,5 @@ MonoBehaviour:
   _pickupPrefabs:
   - {fileID: 3863273510589262429, guid: 7f5e6d672521a234988fcc29e946ae68, type: 3}
   - {fileID: 3863273510589262429, guid: 91e4dcf19986b534ab06ce3e9dc64a55, type: 3}
+  - {fileID: 3863273510589262429, guid: 4245c0de712c9ef408d610e02b792fbb, type: 3}
   _pickupSpawnProbability: 0.2
