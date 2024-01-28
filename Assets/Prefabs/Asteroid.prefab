@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5210211660654917734}
   - component: {fileID: 1178947698844224754}
   - component: {fileID: 1497758097384136822}
+  - component: {fileID: 1744782052879553123}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -150,3 +151,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b14c429fc6a42184f92603275e4caf2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1744782052879553123}
+        m_TargetAssemblyTypeName: ScoreObject, Assembly-CSharp
+        m_MethodName: ModifyScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1744782052879553123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2962026546172036141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6efb529d2966c3e4c951b41e25a75f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreAmount: 100
