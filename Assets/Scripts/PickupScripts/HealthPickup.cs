@@ -16,6 +16,11 @@ public class HealthPickup : MonoBehaviour, IPickup
             ApplyEffect();
             Destroy(gameObject);
         }
+
+        if (collision.CompareTag(Tags.FINISH))
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void ApplyEffect()

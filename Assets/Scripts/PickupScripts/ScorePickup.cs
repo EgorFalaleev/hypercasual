@@ -11,6 +11,11 @@ public class ScorePickup : ScoreObject, IPickup
             ApplyEffect();
             Destroy(gameObject);
         }
+
+        if (collision.CompareTag(Tags.FINISH))
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void ApplyEffect()
