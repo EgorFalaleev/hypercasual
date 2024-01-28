@@ -14,7 +14,6 @@ public class PlayerHealthController : MonoBehaviour
     {
         if (collision.CompareTag(Tags.ASTEROID))
         {
-            Debug.Log("collision");
             TakeDamage(1);
         }
     }
@@ -22,7 +21,6 @@ public class PlayerHealthController : MonoBehaviour
     public void TakeDamage(int amount)
     {
         _health -= amount;
-        Debug.Log(_health);
         OnDamageTaken.Invoke();
 
         if (_health <= 0 )

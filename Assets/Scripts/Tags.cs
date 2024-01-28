@@ -6,4 +6,5 @@ public static class Tags
 {
     public const string FINISH = "Finish";
     public const string ASTEROID = "Asteroid";
+    public const string PLAYER = "Player";
 }
