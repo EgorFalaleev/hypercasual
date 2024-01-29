@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Spawner : MonoBehaviour
 {
+    [SerializeField] private Transform _spawnedObjectsContainer;
     [SerializeField] protected float _minSpawnCooldownInSeconds = 0.5f;
     [SerializeField] protected float _maxSpawnCooldownInSeconds = 1.5f;
     [SerializeField] protected int _minNumberOfObjectsToSpawn = 1;
@@ -43,7 +44,9 @@ public abstract class Spawner : MonoBehaviour
     {
         for (int i = 0; i < amountToSpawn; i++)
         {
-            Instantiate(_objectToSpawn, GenerateRandomPosition(), Quaternion.identity);
+            GameObject newObject = Instantiate(_objectToSpawn, GenerateRandomPosition(), Quaternion.identity);
+
+            newObject.transform.SetParent(_spawnedObjectsContainer);
         }
     }
 
