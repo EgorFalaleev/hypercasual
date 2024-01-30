@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SaveManager : MonoBehaviour
@@ -39,12 +40,6 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-    public void Save()
-    {
-        SaveGameStats();
-        SaveSoundSettings();
-    }
-
     public void SaveGameStats()
     {
         PlayerPrefs.SetInt("HighScore", 0);
@@ -52,9 +47,9 @@ public class SaveManager : MonoBehaviour
 
     public void SaveSoundSettings()
     {
-        PlayerPrefs.SetFloat("MasterVolume", 0.5f);
+        PlayerPrefs.SetFloat("MasterVolume", SoundManager.Instance.Volume);
         // 1 - turned on, 0 - turned off
-        PlayerPrefs.SetInt("IsMusicOn", 1);
-        PlayerPrefs.SetInt("IsEffectsOn", 1);
+        PlayerPrefs.SetInt("IsMusicOn", SoundManager.Instance.IsMusicOn);
+        PlayerPrefs.SetInt("IsEffectsOn", SoundManager.Instance.IsEffectsOn);
     }
 }
