@@ -42,7 +42,7 @@ public class SaveManager : MonoBehaviour
 
     public void SaveGameStats()
     {
-        PlayerPrefs.SetInt("HighScore", 0);
+        PlayerPrefs.SetInt("HighScore", FindObjectOfType<ScoreController>().HighScore);
     }
 
     public void SaveSoundSettings()

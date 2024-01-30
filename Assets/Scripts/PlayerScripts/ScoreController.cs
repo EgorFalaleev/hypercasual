@@ -13,6 +13,7 @@ public class ScoreController : MonoBehaviour
     private void Start()
     {
         Score = 0;
+        HighScore = SaveManager.Instance.HighScore;
     }
 
     public void ModifyScore(int amount)
@@ -23,9 +24,10 @@ public class ScoreController : MonoBehaviour
 
     public void SetHighScore()
     {
-        if (Score >  HighScore)
+        if (Score > HighScore)
         {
             HighScore = Score;
+            SaveManager.Instance.SaveGameStats();
         }
     }
 }
