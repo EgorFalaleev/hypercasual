@@ -7,6 +7,31 @@
       "dependencies": {},
       "hash": "6e1e828e002770c0fe9faa4012137922b6ef3d50"
     },
+    "com.onesignal.unity.android": {
+      "version": "5.0.5",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.onesignal.unity.core": "5.0.5"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "com.onesignal.unity.core": {
+      "version": "5.0.5",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.org"
+    },
+    "com.onesignal.unity.ios": {
+      "version": "5.0.5",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.onesignal.unity.core": "5.0.5"
+      },
+      "url": "https://registry.npmjs.org"
+    },
     "com.unity.2d.animation": {
       "version": "7.0.12",
       "depth": 1,
