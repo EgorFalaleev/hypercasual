@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Firebase.Extensions;
+using Firebase.Analytics;
 
 public class FirebaseInit : MonoBehaviour
 {
@@ -14,7 +16,7 @@ public class FirebaseInit : MonoBehaviour
             {
                 // Create and hold a reference to your FirebaseApp,
                 // where app is a Firebase.FirebaseApp property of your application class.
-                var app = FirebaseApp.DefaultInstance;
+                Firebase.FirebaseApp app = FirebaseApp.DefaultInstance;
             }
             else
             {
@@ -23,5 +25,6 @@ public class FirebaseInit : MonoBehaviour
                 // Firebase Unity SDK is not safe to use here.
             }
         });
+
     }
 }
