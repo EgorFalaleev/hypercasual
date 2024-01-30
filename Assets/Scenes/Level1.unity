@@ -4400,7 +4400,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.size
@@ -4427,6 +4427,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 787357327}
@@ -4443,6 +4447,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4246912528360776855}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 463134245}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -4456,6 +4464,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
@@ -4477,6 +4489,10 @@ PrefabInstance:
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: SetHighScore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: UpdateScore
       objectReference: {fileID: 0}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4523,6 +4539,10 @@ PrefabInstance:
       value: ScoreController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: DefeatWindow, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
@@ -4530,6 +4550,10 @@ PrefabInstance:
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 4246912528360776855}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerHealthUIController, Assembly-CSharp
@@ -4561,6 +4585,10 @@ PrefabInstance:
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScoreController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2120662977937720060, guid: ac799976f4a63bf428f4183e8088ec19, type: 3}
       propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
