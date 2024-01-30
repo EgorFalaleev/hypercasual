@@ -8,6 +8,7 @@ public class ScoreController : MonoBehaviour
     public UnityEvent OnScoreModified;
 
     public int Score { get; private set; }
+    public int HighScore { get; private set; }
 
     private void Start()
     {
@@ -18,5 +19,13 @@ public class ScoreController : MonoBehaviour
     {
         Score += amount;
         OnScoreModified.Invoke();
+    }
+
+    public void SetHighScore()
+    {
+        if (Score >  HighScore)
+        {
+            HighScore = Score;
+        }
     }
 }
