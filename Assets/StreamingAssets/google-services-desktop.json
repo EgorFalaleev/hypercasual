@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "476259043961",
+    "project_id": "hypercasual-b1c9e",
+    "storage_bucket": "hypercasual-b1c9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476259043961:android:f7f80f684e67bbd77c22a8",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.hypercasual"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvt3DmFyyZBXFjoAobP20aFRUD_RckGUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
