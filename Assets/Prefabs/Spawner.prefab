@@ -46,10 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnedObjectsContainer: {fileID: 0}
-  _minSpawnCooldownInSeconds: 0.5
-  _maxSpawnCooldownInSeconds: 1.5
+  _minSpawnCooldownInSeconds: 0.7
+  _maxSpawnCooldownInSeconds: 2
   _minNumberOfObjectsToSpawn: 1
-  _maxNumberOfObjectsToSpawn: 4
+  _maxNumberOfObjectsToSpawn: 3
   _asteroidPrefab: {fileID: 2962026546172036141, guid: 74fe07eb9c9228b458b735b75e9cab2e, type: 3}
 --- !u!114 &598255920
 MonoBehaviour:
