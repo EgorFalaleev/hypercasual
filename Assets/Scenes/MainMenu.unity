@@ -365,6 +365,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1708626869}
+        m_TargetAssemblyTypeName: SoundsButtonTextManager, Assembly-CSharp
+        m_MethodName: SetSoundsButtonText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1023547637}
+        m_TargetAssemblyTypeName: VolumeSliderController, Assembly-CSharp
+        m_MethodName: UpdateSlider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &181346105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,7 +512,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4577289952502005698, guid: a0d81d8d785db734694c1d65a6a7117a, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4577289952502005698, guid: a0d81d8d785db734694c1d65a6a7117a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1587,8 +1611,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1603756544}
-        m_TargetAssemblyTypeName: SaveManager, Assembly-CSharp
+      - m_Target: {fileID: 1771738070}
+        m_TargetAssemblyTypeName: ButtonsController, Assembly-CSharp
         m_MethodName: SaveSoundSettings
         m_Mode: 1
         m_Arguments:
@@ -1612,6 +1636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _slider: {fileID: 1023547636}
+  _buttonsController: {fileID: 1771738070}
 --- !u!1001 &1129216894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1621,7 +1646,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8604877658496309955, guid: 9195e428e5b7d2643abce3450909d7ae, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8604877658496309955, guid: 9195e428e5b7d2643abce3450909d7ae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1797,7 +1822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8371507481080869150, guid: ebf4023abeea1cb47b4eaf7fadc55671, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8371507481080869150, guid: ebf4023abeea1cb47b4eaf7fadc55671, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1878,8 +1903,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 261, y: -1146}
-  m_SizeDelta: {x: 353.2463, y: 87.82178}
+  m_AnchoredPosition: {x: 0.00011444, y: -1323}
+  m_SizeDelta: {x: 504.23, y: 87.8218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1418315202
 MonoBehaviour:
@@ -1925,8 +1950,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1849641833}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+      - m_Target: {fileID: 1771738070}
+        m_TargetAssemblyTypeName: ButtonsController, Assembly-CSharp
         m_MethodName: ToggleEffects
         m_Mode: 1
         m_Arguments:
@@ -1937,9 +1962,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1603756544}
-        m_TargetAssemblyTypeName: SaveManager, Assembly-CSharp
+      - m_Target: {fileID: 1771738070}
+        m_TargetAssemblyTypeName: ButtonsController, Assembly-CSharp
         m_MethodName: SaveSoundSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1708626869}
+        m_TargetAssemblyTypeName: SoundsButtonTextManager, Assembly-CSharp
+        m_MethodName: SetSoundsButtonText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2351,8 +2388,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -207.87, y: -1146}
-  m_SizeDelta: {x: 353.2463, y: 87.82178}
+  m_AnchoredPosition: {x: 0, y: -1146}
+  m_SizeDelta: {x: 504.2336, y: 87.8218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531374172
 MonoBehaviour:
@@ -2398,8 +2435,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1849641833}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+      - m_Target: {fileID: 1771738070}
+        m_TargetAssemblyTypeName: ButtonsController, Assembly-CSharp
         m_MethodName: ToggleMusic
         m_Mode: 1
         m_Arguments:
@@ -2410,9 +2447,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1603756544}
-        m_TargetAssemblyTypeName: SaveManager, Assembly-CSharp
+      - m_Target: {fileID: 1771738070}
+        m_TargetAssemblyTypeName: ButtonsController, Assembly-CSharp
         m_MethodName: SaveSoundSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1708626869}
+        m_TargetAssemblyTypeName: SoundsButtonTextManager, Assembly-CSharp
+        m_MethodName: SetSoundsButtonText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2473,7 +2522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7817434982418651163, guid: a998d19fc6d79d046a195a47fdc6972c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7817434982418651163, guid: a998d19fc6d79d046a195a47fdc6972c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2731,11 +2780,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1708626866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45c9dc776b194e4fb81e5b18c1369aa, type: 3}
+  m_Script: {fileID: 11500000, guid: 688b98f9f6ff5804ea8653e2c4193992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _musicToggle: {fileID: 0}
-  _effectsToggle: {fileID: 0}
+  _musicText: {fileID: 350886206}
+  _effectText: {fileID: 1734558247}
 --- !u!1 &1734558245
 GameObject:
   m_ObjectHideFlags: 0
@@ -2871,6 +2920,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734558245}
   m_CullTransparentMesh: 1
+--- !u!1 &1771738068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1771738069}
+  - component: {fileID: 1771738070}
+  m_Layer: 0
+  m_Name: SettingsController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1771738069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771738068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1771738070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771738068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45436eb5920c0a04b9c002a943be420b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1842538896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,7 +3065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8737226396828179502, guid: 2269b8ea3018c8f4aba67a10b578d167, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8737226396828179502, guid: 2269b8ea3018c8f4aba67a10b578d167, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3016,17 +3109,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2269b8ea3018c8f4aba67a10b578d167, type: 3}
---- !u!114 &1849641833 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8737226396828179501, guid: 2269b8ea3018c8f4aba67a10b578d167, type: 3}
-  m_PrefabInstance: {fileID: 1849641832}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20653bb5328652245beb181394b04860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2062901640
 GameObject:
   m_ObjectHideFlags: 0
@@ -3121,7 +3203,7 @@ RectTransform:
   m_Children:
   - {fileID: 1708626867}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
