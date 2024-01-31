@@ -20,7 +20,6 @@ public class PickupSpawner : Spawner
     private bool DecideToSpawnPickup()
     {
         float randomNumber = Random.Range(0f, 1f);
-        Debug.Log(randomNumber);
 
         if (randomNumber > _pickupSpawnProbability)
         {

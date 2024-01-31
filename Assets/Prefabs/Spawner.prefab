@@ -45,10 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4adb36235f04464f8e3302eb28c9267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spawnedObjectsContainer: {fileID: 0}
   _minSpawnCooldownInSeconds: 0.5
   _maxSpawnCooldownInSeconds: 1.5
   _minNumberOfObjectsToSpawn: 1
-  _maxNumberOfObjectsToSpawn: 3
+  _maxNumberOfObjectsToSpawn: 4
   _asteroidPrefab: {fileID: 2962026546172036141, guid: 74fe07eb9c9228b458b735b75e9cab2e, type: 3}
 --- !u!114 &598255920
 MonoBehaviour:
@@ -62,6 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b8c61e8bfd42b41b2e9517c1aa3539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spawnedObjectsContainer: {fileID: 0}
   _minSpawnCooldownInSeconds: 0.5
   _maxSpawnCooldownInSeconds: 1.5
   _minNumberOfObjectsToSpawn: 1
