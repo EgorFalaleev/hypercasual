@@ -6,11 +6,16 @@ using UnityEngine.UI;
 public class VolumeSliderController : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
+    [SerializeField] private ButtonsController _buttonsController;
 
     private void Start()
     {
-        _slider.onValueChanged.AddListener(val => SoundManager.Instance.ChangeMasterVolume(val));
+        _buttonsController = FindObjectOfType<ButtonsController>();
+        _slider.onValueChanged.AddListener(val => _buttonsController.ChangeMasterVolume(val));
+    }
 
-        _slider.value = SaveManager.Instance.MasterVolume;
+    public void UpdateSlider()
+    {
+        _slider.value = _buttonsController.MasterVolume;
     }
 }

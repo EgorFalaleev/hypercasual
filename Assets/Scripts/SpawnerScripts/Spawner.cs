@@ -52,7 +52,24 @@ public abstract class Spawner : MonoBehaviour
 
     private Vector2 GenerateRandomPosition()
     {
-        // generate position above the screen within its width
-        return new Vector2(Random.Range(-_screenBounds.x, _screenBounds.x), _screenBounds.y * 1.5f);
+        var spawnPosition = new Vector2(Random.Range(-_screenBounds.x, _screenBounds.x), _screenBounds.y * 1.5f);
+
+        // find another spawn position if another object was spawned close
+        while (!IsSpawnPointFree(spawnPosition))
+        {
+            spawnPosition = new Vector2(Random.Range(-_screenBounds.x, _screenBounds.x), _screenBounds.y * 1.5f);
+        }
+           
+        return spawnPosition;
+    }
+
+    private bool IsSpawnPointFree(Vector2 spawnPosition)
+    {
+        var overlappingCollider = Physics2D.OverlapCircle(spawnPosition, 1f);
+
+        if (overlappingCollider == null)
+            return true;
+        else
+            return false;
     }
 }

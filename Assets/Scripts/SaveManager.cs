@@ -16,14 +16,14 @@ public class SaveManager : MonoBehaviour
         private set { }
     }
     // 1 - music on, 0 - music off
-    public int IsMusicOn
+    public string IsMusicOn
     {
-        get { return PlayerPrefs.GetInt("IsMusicOn", 1); }
+        get { return PlayerPrefs.GetString("IsMusicOn", "On"); }
         private set { }
     }
-    public int IsEffectsOn
+    public string IsEffectsOn
     {
-        get { return PlayerPrefs.GetInt("IsEffectsOn", 1); }
+        get { return PlayerPrefs.GetString("IsEffectsOn", "On"); }
         private set { }
     }
 
@@ -49,7 +49,7 @@ public class SaveManager : MonoBehaviour
     {
         PlayerPrefs.SetFloat("MasterVolume", SoundManager.Instance.Volume);
         // 1 - turned on, 0 - turned off
-        PlayerPrefs.SetInt("IsMusicOn", SoundManager.Instance.IsMusicOn);
-        PlayerPrefs.SetInt("IsEffectsOn", SoundManager.Instance.IsEffectsOn);
+        PlayerPrefs.SetString("IsMusicOn", SoundManager.Instance.IsMusicOn);
+        PlayerPrefs.SetString("IsEffectsOn", SoundManager.Instance.IsEffectsOn);
     }
 }
